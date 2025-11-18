@@ -6,11 +6,13 @@ from src.library_app.member import Member
 
 
 @pytest.fixture
-def book():
-    return Book("Test Driven Development", "Kent Beck", "11111")
-
 def library():
-    return Library("ABC")
+    return Library("Central Library")
 
+@pytest.fixture
+def book():
+    return Book("Clean Code", "Robert Martin", "12345")
+
+@pytest.fixture
 def member():
-    return Member(member_id="M001", name="Alice")
+    return Member("Alice", "M001")
