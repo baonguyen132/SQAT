@@ -1,4 +1,6 @@
-from library_app.book import Book
+from src.library_app.book import Book
+
+
 class Member:
     def __init__(self, name, member_id):
         if not name or not member_id:

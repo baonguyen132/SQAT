@@ -1,5 +1,6 @@
-from library_app.book import Book
-from library_app.member import Member
+from src.library_app.book import Book
+from src.library_app.member import Member
+
 
 class Library:
     def __init__(self, name):
